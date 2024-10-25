@@ -28,7 +28,8 @@ This project, developed as part of my graduation requirements, was designed to m
 ---
 
 ## Photos
-![/Images/Robot.jpeg}
+![Robot Image](/Images/Robot.jpeg)
+
 ---
 
 ## Demo Video
