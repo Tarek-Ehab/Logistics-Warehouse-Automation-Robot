@@ -1,0 +1,258 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classification Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,300;0,900;1,900&family=Poppins:wght@300&family=Roboto:wght@300&family=Space+Mono:ital@1&family=Urbanist:wght@100&family=Xanh+Mono:ital@1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/framework.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/basic.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/media.css' %}" />
+</head>
+
+<body>
+  <div class="page d-flex">
+    <div class="sidebar bg-white p-20 p-relative">
+      <h3 class="p-relative txt-c mt-0">Warehouse System</h3>
+      <ul>
+        <li>
+          <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'dashboard' %}">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'user' %}">
+            <i class="fa-solid fa-user"></i>
+            <span>User</span>
+          </a>
+        </li>
+
+        <li class="unHideList">
+          <a class="d-flex align-center justify-content-between fs-14 c-black rad-6 p-10">
+            <span>Classification</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+        </li>
+
+        <ul class="fs-14 c-black rad-6 p-10 hideList toggy">
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'classification' %}">
+              <i class="fa-regular fa-square-plus"></i>
+              <span>List</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'addclassification' %}">
+              <i class="fa-regular fa-square-plus"></i>
+              <span>Add</span>
+            </a>
+          </li>
+        </ul>
+
+        <li class="unHideList">
+          <a class="d-flex align-center justify-content-between fs-14 c-black rad-6 p-10">
+            <span>Zone</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+        </li>
+
+        <ul class="fs-14 c-black rad-6 p-10 hideList toggy">
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'zone' %}">
+              <i class="fa-regular fa-square-plus"></i>
+              <span>List</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'addZone' %}">
+              <i class="fa-regular fa-square-plus"></i>
+              <span>Add</span>
+            </a>
+          </li>
+        </ul>
+
+        <li class="unHideList">
+          <a class="d-flex align-center justify-content-between fs-14 c-black rad-6 p-10">
+            <span>Shelf</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+        </li>
+
+        <ul class="fs-14 c-black rad-6 p-10 hideList toggy">
+          <li class="toggleshow">
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'shelf' %}">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>List</span>
+            </a>
+          </li>
+
+          <li class="toggleshow">
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'addshelf' %}">
+              <i class="fa-solid fa-store"></i>
+              <span>Add</span>
+            </a>
+          </li>
+        </ul>
+
+        <li class="unHideList">
+          <a class="d-flex align-center justify-content-between fs-14 c-black rad-6 p-10">
+            <span>Products</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+        </li>
+
+        <ul class="fs-14 c-black rad-6 p-10 hideList toggy">
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'productList' %}">
+              <i class="fa-solid fa-list"></i>
+              <span>List</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'addProduct' %}">
+              <i class="fa-solid fa-plus"></i>
+              <span>Add</span>
+            </a>
+          </li>
+        </ul>
+
+        <li class="unHideList">
+          <a class="d-flex align-center justify-content-between fs-14 c-black rad-6 p-10">
+            <span>Buyer</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+        </li>
+
+        <ul class="fs-14 c-black rad-6 p-10 hideList toggy">
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'buyer' %}">
+              <i class="fa-solid fa-users"></i>
+              <span>List</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'addbuyer' %}">
+              <i class="fa-solid fa-user-plus"></i>
+              <span>Add</span>
+            </a>
+          </li>
+        </ul>
+
+        <li class="unHideList">
+          <a class="d-flex align-center justify-content-between fs-14 c-black rad-6 p-10">
+            <span>Car Drop</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+        </li>
+
+        <ul class="fs-14 c-black rad-6 p-10 hideList toggy">
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'carDrop' %}">
+              <i class="fa-solid fa-caravan"></i>
+              <span>List</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'addcarDrop' %}">
+              <i class="fa-solid fa-folder-plus"></i>
+              <span>Add</span>
+            </a>
+          </li>
+        </ul>
+
+        <li class="unHideList">
+          <a class="d-flex align-center justify-content-between fs-14 c-black rad-6 p-10">
+            <span>Orders</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+        </li>
+
+        <ul class="fs-14 c-black rad-6 p-10 hideList toggy">
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'order' %}">
+              <i class="fa-solid fa-sack-dollar"></i>
+              <span>List</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'addorder' %}">
+              <i class="fa-solid fa-circle-dollar-to-slot"></i>
+              <span>Add</span>
+            </a>
+          </li>
+        </ul>
+        <li class="unHideList">
+          <a class="d-flex align-center justify-content-between fs-14 c-black rad-6 p-10">
+            <span>Supplier</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+        </li>
+
+        <ul class="fs-14 c-black rad-6 p-10 hideList toggy">
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'supplier' %}">
+              <i class="fa-solid fa-person-shelter"></i>
+              <span>List</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="{% url 'addsupplier' %}">
+              <i class="fa-solid fa-people-roof"></i>
+              <span>Add</span>
+            </a>
+          </li>
+        </ul>
+
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" onclick="logOut()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content w-full">
+      <h1 class="p-relative">Classification Products List</h1>
+      <!--test-->
+      <div class="mytable">
+        <div class="responsive-table">
+          <table class="fs-15 w-full">
+            <thead>
+              <tr>
+                <td>Classification</td>
+                <td>Product Name</td>
+                <td>Supplier Name</td>
+                <td>Zone</td>
+                <td>Shelf</td>
+                <td>Price</td>
+                <td>Quantity</td>
+              </tr>
+            </thead>
+            <tbody id="classProducts"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{% static 'js/config.js'%}"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="{% static 'js/jquery-3.6.1.min.js' %}"></script>
+  <script src="{% static 'js/plug.js' %}"></script>
+  <script src="{% static 'js/class.js' %}"></script>
+</body>
+
+</html>

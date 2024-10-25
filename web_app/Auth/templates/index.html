@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warehouse</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,300;0,900;1,900&family=Poppins:wght@300&family=Roboto:wght@300&family=Space+Mono:ital@1&family=Urbanist:wght@100&family=Xanh+Mono:ital@1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/basic.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/media.css' %}">
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <h3>Warehouse System</h3>
+      <div class="login py-5 px-5">
+        <div class="row py-5 ">
+          <div class="col-md-6">
+            <div class="img">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="items my-3">
+              <div class="item">
+                <label for="name" class="form-label my-2">Username</label>
+                <input id="name" type="text" class="form-control my-2 " placeholder="name" required name="username" />
+              </div>
+              <div class="item my-2">
+                <label for="password" class="form-label my-2 ">Password</label>
+                <input id="password" type="password" class="form-control my-2 " value="" placeholder="password" required
+                  name="password" />
+              </div>
+              <div class="item">
+                <button id="signin" class="myBtn btn btn-dark w-100 my-4">
+                  log-in
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{% static 'js/config.js'%}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="{% static 'js/login.js' %}"></script>
+</body>
+
+</html>
