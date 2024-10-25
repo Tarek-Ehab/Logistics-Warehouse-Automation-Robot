@@ -33,7 +33,12 @@ Check out the demo video of our Logistics and Warehouse Automation System on You
 [Project Demo](https://youtu.be/rn0h6OKFDIg?si=p920vsHWhEDFhPXL)
 
 ---
+## Presentation
 
+You can view the PowerPoint presentation for our project through the following link:  
+[Project Presentation](https://docs.google.com/presentation/d/1hPEFgAD3W3eckiVjbizePD91EhJ60Qlg/edit?usp=sharing&ouid=117986373363262950736&rtpof=true&sd=true)
+
+---
 ## Photos
 ![Robot Image](/Images/Robot.jpeg)
 
