@@ -27,14 +27,15 @@ This project, developed as part of my graduation requirements, was designed to m
 
 ---
 
-## Photos
-![Robot Image](/Images/Robot.jpeg)
-
----
-
 ## Demo Video
 
 Check out the demo video of our Logistics and Warehouse Automation System on YouTube:  
 [Project Demo](https://youtu.be/rn0h6OKFDIg?si=p920vsHWhEDFhPXL)
 
 ---
+
+## Photos
+![Robot Image](/Images/Robot.jpeg)
+
+---
+
